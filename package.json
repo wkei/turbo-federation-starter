@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "pnpm@7.13.5",
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:container": "turbo run dev --filter=container",
+    "dev:subapp": "turbo run dev --filter=subapp",
+    "live": "turbo run live",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "build": "rm -rf dist && turbo run build && sh scripts/after_build.sh",
+    "preview": "serve -s dist -l 5000"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:^",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  }
+}

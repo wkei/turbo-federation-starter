@@ -1,0 +1,24 @@
+{
+  "name": "components",
+  "description": "complex shareable components",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/*.tsx"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "ui": "workspace:^",
+    "i18n": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.14",
+    "config": "workspace:^",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:^",
+    "typescript": "^4.8.4"
+  }
+}
